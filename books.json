@@ -5,7 +5,8 @@
         "pageCount": 416,
         "authors": "W. Frank Ableson, Charlie Collins, Robi Sen",
         "publishDate": "2009-04-01T00:00:00.000-0700",
-        "description": "Unlocking Android: A Developer's Guide provides concise, hands-on instruction for the Android operating system and development tools. This book teaches important architectural concepts in a straightforward writing style and builds on this with practical and useful examples throughout."
+        "description": "Unlocking Android: A Developer's Guide provides concise, hands-on instruction for the Android operating system and development tools. This book teaches important architectural concepts in a straightforward writing style and builds on this with practical and useful examples throughout.",
+        "taken": true
     },
     {
         "title": "Zend Framework in Action",

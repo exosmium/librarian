@@ -7,17 +7,43 @@ piem. Zinot ka kurss ir 1.0831, padodot 10 eur, rezultāts būs 10.83 usd
 
 2 veiksmīgi scenāriji (happy path):
 
+Izmantojot sistēmas funkciju "Search by part of book title", ievadot "Unlocking Andro", rezultāts būs:
+Matching books:
+*atrasta grāmata*
+
+Izmantojot sistēmas funkciju "Show 10 longest books", rezultāts būs:
+10 Longest Books:
+*top 10 grāmatas pēc izmera*
+
 
 
 5 izmantošanas scenāriji (use-case):
 
+Izmantojot sistēmas funkciju "Search by part of book title", ievadot "1", rezultāts būs:
+Matching books:
+*grāmatas, kur nosaukuma ir 1*
 
+Izmantojot sistēmas funkciju "Search by part of book title", ievadot "Do Androids Dream of Electric Sheep", rezultāts būs:
+*grāmatas, kur nosaukuma ir Do Androids Dream of Electric Sheep*
 
+Izmantojot sistēmas funkciju "Mark book as taken", ievadot "", rezultāts būs:
+Book with ISBN '' not found in the library.
 
+Izmantojot sistēmas funkciju "Mark book as free", ievadot "1933988673X", rezultāts būs:
+*grāmatas, kur nosaukuma ir Do Androids Dream of Electric Sheep*
 
+Izmantojot sistēmas funkciju "Add new book", ievadot datus "Coffeehouse", "1884777384", 316," Levi Asher, Christian Crumlish", "1997-07-01T00:00:00.000-0700", "Coffeehouse is an anthology of stories.", rezultāts būs:
+Book added successfully.
 
 5 robežas scenāriji (edge-case):
 
+Izmantojot sistēmas funkciju "Search by part of book title", ievadot "🍉", rezultāts būs:
+*grāmatas, kur nosaukuma ir 🍉*
 
+Izmantojot sistēmas funkciju "Search by part of book title", ievadot " ", rezultāts būs kļūda.
 
+Izmantojot sistēmas funkciju "Search by part of book title", ievadot "", rezultāts būs kļūda.
 
+Izmantojot sistēmas funkciju "Mark book as free", ievadot "                        ", rezultāts būs kļūda.
+
+Izmantojot sistēmas funkciju "Add new book", ievadot visur "", rezultāts būs kļūda.
